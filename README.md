@@ -10,7 +10,7 @@
 
 📌 설치를 해봅시다
 ---
-* R설치 [설치영상](https://youtu.be/iijWlXX2LRk)
+* R설치 [<설치영상>](https://youtu.be/iijWlXX2LRk)
 	* [설치파일 다운로드](https://cran.seoul.go.kr/)
 	* 운영체제에 맞는 설치파일을 다운로드(Windows or Mac)
 	* (Windows 사용자는)Download `R for Windows` -> `install R for the first time` -> `Download R 3.6.1 for Windows` 클릭
