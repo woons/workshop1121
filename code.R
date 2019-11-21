@@ -44,6 +44,10 @@ glimpse(df) # 각 열을 요약해서 보여주기(dplyr패키지 기능)
 unique(df$소속_대분류)
 unique(df$`재산의 종류`)
 
+df %>% 
+  distinct(개별index) %>% 
+  count(개별index, sort = T)
+
 #------------------------------------------------
 # select
 #------------------------------------------------
@@ -71,7 +75,8 @@ df %>%
 df %>% 
   group_by(소속_대분류) %>% 
   summarise(total = sum(현재가액)) %>% 
-  arrange(desc(total))
+  arrange(desc(total)) %>% 
+  mutate(비율 = round(total/sum(total), 2) * 100)
 
 df %>% 
   group_by(소속_대분류) %>% 

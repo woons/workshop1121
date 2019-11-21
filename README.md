@@ -29,6 +29,8 @@
 * `tidyverse` 및 `taltal`패키지 설치
 ```r
 install.packages("tidyverse", dependency = TRUE)
+install.packages("devtools", dependency = TRUE)
+
 devtools::install_github("taltal-ddj/taltal")
 ```
   
